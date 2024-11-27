@@ -19,7 +19,7 @@ function Header() {
         bgcolor: 'white',
         position: 'sticky',
         top: 0,
-        zIndex: 1,
+        zIndex: 99,
       }}
     >
       <Container
@@ -50,48 +50,48 @@ function Header() {
             <Typography
               component={Link}
               to="/jobs"
-              sx={{ fontSize: { xs: "10px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
+              sx={{ fontSize: { xs: "11px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
             >
               Find Jobs
             </Typography>
             <Typography
               component={Link}
               to="/companies"
-              sx={{ fontSize: { xs: "10px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
+              sx={{ fontSize: { xs: "11px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
             >
               Top Companies
             </Typography>
             <Typography
               component={Link}
               to="/tracker"
-              sx={{ fontSize: { xs: "10px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
+              sx={{ fontSize: { xs: "11px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
             >
               Job Tracker
             </Typography>
             <Typography
               component={Link}
               to="/calendar"
-              sx={{ fontSize: { xs: "10px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
+              sx={{ fontSize: { xs: "11px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
             >            My Calendar
             </Typography>
             <Typography
               component={Link}
               to="/documents"
-              sx={{ fontSize: { xs: "10px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
+              sx={{ fontSize: { xs: "11px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
             >
               Documents
             </Typography>
             <Typography
               component={Link}
               to="/messages"
-              sx={{ fontSize: { xs: "10px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
+              sx={{ fontSize: { xs: "11px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
             >
               Messages
             </Typography>
             <Typography
               component={Link}
               to="/notifications"
-              sx={{ fontSize: { xs: "10px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
+              sx={{ fontSize: { xs: "11px", lg: "16px !important" }, fontWeight: '500', textDecoration: 'none', color: 'inherit', '&:hover': { textDecoration: 'underline' } }}
             >
               Notifications
             </Typography>
@@ -120,9 +120,10 @@ function Header() {
               px: 2,
               py: 0.5,
               borderRadius: '5px',
-              width: { xs: 150, lg: 261 },
-              fontSize: { xs: "14px", xl: "16px !important" },
+              width: { xs: 150,  sm:100,lg: 261 },
+              fontSize: { xs: "10px", xl: "16px !important" },
               fontWeight: '500'
+              
               // Smaller width on mobile
             }}
           />
@@ -133,15 +134,15 @@ function Header() {
             color="primary"
             sx={{
               display: { xs: 'none', sm: 'inline-flex' },
-              width: { xs: "auto", lg: "147px" }, // Hide on extra small screens
-              fontSize: { xs: "14px", xl: "16px !important" }
+              width: { xs: "auto", sm:100,lg: "147px" }, // Hide on extra small screens
+              fontSize: { xs: "10px", xl: "16px !important" }
             }}
           >
             Resume Builder
           </Button>
 
           {/* User Avatar */}
-          <Avatar alt="User Profile" src="/user-avatar.png" sx={{ width: 40, height: 40, display: { xs: 'inline-flex', sm: 'flex' } }} />
+          <Avatar alt="User Profile" src="/images/bg-profile.png" sx={{ width: 40, height: 40, display: { xs: 'inline-flex', sm: 'flex' } }} />
 
           {/* Mobile Menu Icon */}
           <IconButton

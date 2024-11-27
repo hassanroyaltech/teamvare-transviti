@@ -12,7 +12,7 @@ export const JobGrid: React.FC<JobGridProps> = ({ jobData ,heading}) => {
     return (
        <>
         {heading}
-        <Grid container    rowGap={"8px"}   mt={1}>
+        <Grid container    rowGap={"8px"}   mt={{xs:0, lg:1}} spacing={{xs:2, lg:0}}>
             {jobData.map((job, index) => (
                 <Grid
                     item

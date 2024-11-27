@@ -96,8 +96,10 @@ function JobsListingPage() {
     return (
         <Layout>
             <Box width={"full"} display={{ xs: "block", sm: "flex" }} gap={2} mt={4}>
-                <Box flex={1} maxWidth={{ xs: "100%", sm: "calc(100% - 70%)",
-                     lg: "calc(100% - 74%)" }} display={"flex"} gap={1} flexDirection={"column"}>
+                <Box flex={1} maxWidth={{
+                    xs: "100%", sm: "calc(100% - 70%)",
+                    lg: "calc(100% - 74%)"
+                }} display={"flex"} gap={1} flexDirection={"column"}>
                     <ProfileCard
                         backgroundImage="/images/bg-profile.png" // Replace with actual background image URL
                         profileImage="/images/bg-profile.png" // Replace with actual profile image URL
@@ -110,7 +112,7 @@ function JobsListingPage() {
 
                 </Box>
 
-                <Box flex={1} maxWidth={{ xs: "100%",sm: "calc(100% - 30%)", lg: 974 }}>
+                <Box flex={1} maxWidth={{ xs: "100%", sm: "calc(100% - 30%)", lg: 974 }}>
 
                     <Typography fontSize={22} fontWeight={400} color={"#333333"} lineHeight={1.3}>
                         Find your Dream Job, <span className='c-primary'>Albert!</span>
@@ -118,9 +120,8 @@ function JobsListingPage() {
                     <Typography fontSize={15} fontWeight={500} color={"#585D6E"}>
                         Explore the latest job openings and apply for the best opportunities available today!
                     </Typography>
-
                     <SearchBar onSearch={() => { }} />
-                    <Divider sx={{ my: 1 }} />
+                    <Divider sx={{ my: 2 }} />
                     <JobGrid
                         heading={
                             <Box display={"flex"} alignItems={"center"} gap={1}>
