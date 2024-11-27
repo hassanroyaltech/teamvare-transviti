@@ -3,8 +3,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import { JobCardItemProps } from '../../../types/job-item.types';
 import { Card } from '@mui/material';
 import { Icon } from '../../../components/shared/iconmoon';

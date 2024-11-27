@@ -1,11 +1,10 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Divider, Link, Typography } from '@mui/material';
+import { Box,Divider, Link, Typography } from '@mui/material';
 import Layout from '../../components/layout';
 import ProfileCard from './profile-card';
 import ProfileStats from './profile-states';
 import { AccordionItem } from '../../types/accordion.types';
 import { AccordionGroup } from '../../components/shared/accordion';
 import { JobCardItemProps } from '../../types/job-item.types';
-import JobCardItem from './job-card-item';
 import { JobGrid } from './job-grid';
 import { Icon } from '../../components/shared/iconmoon';
 import SearchBar from '../../components/serachbar';
