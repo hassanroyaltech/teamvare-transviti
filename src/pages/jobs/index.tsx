@@ -113,7 +113,7 @@ function JobsListingPage() {
 
                 <Box flex={1} maxWidth={{ xs: "100%", sm: "calc(100% - 30%)", lg: 974 }}>
 
-                    <Box sx={{px:{xs:1,sm:0}}}>
+                    <Box sx={{p:{xs:1,sm:0}}}>
                     <Typography fontSize={22} fontWeight={400} color={"#333333"} lineHeight={1.3}>
                         Find your Dream Job, <span className='c-primary'>Albert!</span>
                     </Typography>
