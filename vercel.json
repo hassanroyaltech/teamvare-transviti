@@ -3,19 +3,21 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
+      "src": "^/static/(.*)$",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "^/.*\\.(js|css|map|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|otf|eot|ttc)$",
+      "dest": "/$0"
+    },
+    {
       "src": "/.*",
       "dest": "/index.html"
     }
-  ],
-  "env": {
-    "VERCEL_TOKEN": "UIneLShOZGAgOP2SBPYddA8c"
-  }
+  ]
 }
