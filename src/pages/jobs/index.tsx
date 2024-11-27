@@ -1,4 +1,4 @@
-import { Box,Divider, Link, Typography } from '@mui/material';
+import { Box, Divider, Link, Typography } from '@mui/material';
 import Layout from '../../components/layout';
 import ProfileCard from './profile-card';
 import ProfileStats from './profile-states';
@@ -113,13 +113,13 @@ function JobsListingPage() {
 
                 <Box flex={1} maxWidth={{ xs: "100%", sm: "calc(100% - 30%)", lg: 974 }}>
 
-                    <Box sx={{p:{xs:1,sm:0}}}>
-                    <Typography fontSize={22} fontWeight={400} color={"#333333"} lineHeight={1.3}>
-                        Find your Dream Job, <span className='c-primary'>Albert!</span>
-                    </Typography>
-                    <Typography fontSize={15} fontWeight={500} color={"#585D6E"}>
-                        Explore the latest job openings and apply for the best opportunities available today!
-                    </Typography>
+                    <Box sx={{ p: { xs: 1, sm: 0 } }}>
+                        <Typography fontSize={22} fontWeight={400} color={"#333333"} lineHeight={1.3}>
+                            Find your Dream Job, <span className='c-primary'>Albert!</span>
+                        </Typography>
+                        <Typography fontSize={15} fontWeight={500} color={"#585D6E"}>
+                            Explore the latest job openings and apply for the best opportunities available today!
+                        </Typography>
                     </Box>
                     <SearchBar onSearch={() => { }} />
                     <Divider sx={{ my: 2 }} />
@@ -131,7 +131,21 @@ function JobsListingPage() {
                                     <Link >See Featured Jobs</Link></Typography>
                             </Box>
                         }
-                        jobData={jobData} />         </Box>
+                        jobData={jobData} />
+                    <Divider sx={{ my: 2 }} />
+
+<JobGrid
+                        heading={
+                            <Box display={"flex"} alignItems={"center"} gap={1}>
+                                <Typography variant="h3" fontSize={18} fontWeight={500}>  Recommended Jobs</Typography>
+                                <Typography fontSize={14} fontWeight={500} className='ms-2 c-primary'>
+                                    <Link >See Recommended Jobs</Link></Typography>
+                            </Box>
+                        }
+                        jobData={jobData} />
+
+
+                </Box>
             </Box>
         </Layout>
     );
